@@ -54,44 +54,43 @@ main {
   line-height: 30px;
 }
 
-.btn {
+button {
   background-color: #fff;
   border: none;
-  padding: 15px 25px;
+  padding: 13px 25px;
   border-radius: 25px;
   font-weight: bold;
+  border: #fff solid 2px;
 }
 
 /*Button Column One*/
-.btn:nth-child(1) {
+.btn-one button {
   color: hsl(31, 77%, 52%);
 }
 
-.btn:nth-child(1):hover {
+.btn-one button:hover {
   background-color: hsl(31, 77%, 52%);
   color: #fff;
-  border: #fff solid 2px;
+
 }
 
 /*Button Column Two*/
-.btn:nth-child(2) {
+.btn-two button{
   color: hsl(184, 100%, 22%);
 }
 
-.btn:nth-child(2):hover {
+.btn-two button:hover {
   background-color: hsl(184, 100%, 22%);
   color: #fff;
-  border: #fff solid 2px;
+
 }
 
 /*Button Column Three*/
-.btn:nth-child(3) {
+.btn-three button {
   color: hsl(179, 100%, 13%);
 }
 
-.btn:nth-child(3):hover {
+.btn-three button:hover {
   background-color: hsl(179, 100%, 13%);
   color: #fff;
-  border: #fff solid 2px;
 }
-
