@@ -3,17 +3,95 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Big Shoulders Display',
-    cursive;
   font-family: 'Lexend Deca',
     sans-serif;
+  color: #fff;
+
 }
 
 main {
-  display: grid;
-
+  width: 95%;
+  margin: 0 auto;
 }
 
 .column {
-  
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+.content {
+  width: 75%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.column:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 15px 0px 0px;
+}
+
+.column:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.column:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 0px 15px 15px;
+}
+
+.title {
+  font-family: 'Big Shoulders Display',
+    cursive;
+  font-size: 36px;
+}
+
+.description {
+  font-family: 'Lexend Deca',
+    sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/*Button Column One*/
+.btn:nth-child(1) {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn:nth-child(1):hover {
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+  border: #fff solid 2px;
+}
+
+/*Button Column Two*/
+.btn:nth-child(2) {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn:nth-child(2):hover {
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+  border: #fff solid 2px;
+}
+
+/*Button Column Three*/
+.btn:nth-child(3) {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:nth-child(3):hover {
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+  border: #fff solid 2px;
+}
+
