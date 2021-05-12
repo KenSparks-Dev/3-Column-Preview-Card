@@ -8,7 +8,9 @@ html {
   color: #fff;
   height: 100%;
 }
-
+body {
+  background-color: lightblue;
+}
 main {
   width: 95%;
   margin: 0 auto;
@@ -98,31 +100,47 @@ button {
 
 @media (min-width: 768px) {
   main {
-    width: 65%;
+    width: 85%;
   }
 }
 
 @media (min-width: 1024px) {
-  body,
-  html {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   main {
     display: flex;
-    width: 95%;
+    width: 100%;
     max-width: 1050px;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .column {
+    width: 320px;
   }
 
   .column:nth-child(1) {
     border-radius: 15px 0px 0px 15px;
+    animation: right-to-left 2s forwards;
+    position: absolute;
+  }
+
+  @keyframes right-to-left {
+    100% {
+      transform: translateX(-320px);
+    }
   }
 
   .column:nth-child(3) {
     border-radius: 0px 15px 15px 0px;
+    animation: left-to-right 2s forwards;
+    position: absolute;
+  }
+
+  @keyframes left-to-right {
+    100% {
+      transform: translateX(320px);
+    }
   }
 }
 
