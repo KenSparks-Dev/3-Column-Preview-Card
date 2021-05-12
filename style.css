@@ -9,11 +9,9 @@ html {
   height: 100%;
 }
 
-
-
 main {
   width: 95%;
-  margin: 90px auto;
+  margin: 70px auto;
 }
 
 .column {
@@ -103,6 +101,7 @@ button {
 @media (min-width: 768px) {
   main {
     width: 75%;
+    margin: 0 auto;
   }
 
   img {
