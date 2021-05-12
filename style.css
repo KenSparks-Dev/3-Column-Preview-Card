@@ -101,7 +101,6 @@ button {
 @media (min-width: 768px) {
   main {
     width: 75%;
-    margin: 0 auto;
   }
 
   img {
