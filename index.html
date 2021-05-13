@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
 
-		<link rel="shortcut icon" type="image/png" href=".\/images/light.png"> 
+		<link rel="shortcut icon" type="image/png" href=".\/images/light.png" />
 
 		<title>Ken Sparks | Tri-column Preview Cards</title>
 
@@ -21,7 +21,7 @@
 	<body>
 		<main>
 			<!--Column One-->
-			<div class="column">
+			<div class="column column-one">
 				<div class="content">
 					<div class="img">
 						<img src="/images/icon-sedans.svg" alt="logo" />
@@ -32,14 +32,19 @@
 							Choose a sedan for its affordability and excellent fuel economy. Ideal for
 							cruising in the city or on your next road trip.
 						</p>
-						<div class="btn-one">
-							<button>Learn More</button>
+						<div class="btns">
+							<div class="open-btn-one btn-one">
+								<button>Learn More</button>
+							</div>
+							<div class="close-btn close-btn-one">
+								<button>X</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!--Column Two-->
-			<div class="column">
+			<div class="column column-two">
 				<div class="content">
 					<div class="img">
 						<img src="./images/icon-suvs.svg" alt="logo" />
@@ -50,14 +55,19 @@
 							Take an SUV for its spacious interior, power, and versatility. Perfect for
 							your next family vacation and off-road adventures.
 						</p>
-						<div class="btn-two">
-							<button>Learn More</button>
+						<div class="btns">
+							<div class="open-btn-two btn-two">
+								<button>Learn More</button>
+							</div>
+							<div class="close-btn close-btn-two">
+								<button>X</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!--Column Three-->
-			<div class="column">
+			<div class="column column-three">
 				<div class="content">
 					<div class="img">
 						<img src="/images/icon-luxury.svg" alt="logo" />
@@ -68,12 +78,18 @@
 							Cruise in the best car brands without the bloated prices. Enjoy the enhanced
 							comfort of a luxury rental and arrive in style.
 						</p>
-						<div class="btn-three">
-							<button>Learn More</button>
-						</div>
+					<div class="btns">
+							<div class="open-btn-three btn-three">
+								<button>Learn More</button>
+							</div>
+							<div class="close-btn close-btn-three">
+								<button>X</button>
+							</div>
 					</div>
 				</div>
 			</div>
 		</main>
+
+		<script src="animations.js"></script>
 	</body>
 </html>

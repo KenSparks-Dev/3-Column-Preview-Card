@@ -64,35 +64,43 @@ button {
   border: #fff solid 2px;
   margin-top: 10px;
 }
-
+.close-btn{
+  display: none;
+}
 /*Button Column One*/
-.btn-one button {
+.btn-one button,
+.close-btn-one button {
   color: hsl(31, 77%, 52%);
 }
 
-.btn-one button:hover {
+.btn-one button:hover,
+.close-btn-one button:hover {
   background-color: hsl(31, 77%, 52%);
   color: #fff;
 
 }
 
 /*Button Column Two*/
-.btn-two button {
+.btn-two button,
+.close-btn-two button {
   color: hsl(184, 100%, 22%);
 }
 
-.btn-two button:hover {
+.btn-two button:hover,
+.close-btn-two button:hover {
   background-color: hsl(184, 100%, 22%);
   color: #fff;
 
 }
 
 /*Button Column Three*/
-.btn-three button {
+.btn-three button,
+.close-btn-three button {
   color: hsl(179, 100%, 13%);
 }
 
-.btn-three button:hover {
+.btn-three button:hover,
+.close-btn-three button:hover {
   background-color: hsl(179, 100%, 13%);
   color: #fff;
 }
@@ -186,5 +194,11 @@ button {
   button {
     font-size: 18px;
     margin-top: 60px;
+  }
+  .close-btn-one, .close-btn-two, .close-btn-three {
+    opacity: 0%;
+  }
+  .btns {
+    display: flex;
   }
 }
