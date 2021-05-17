@@ -21,7 +21,11 @@ function expandCardOne() {
 		closeBtnOne.style.left = '980px';
 		closeBtnOne.style.opacity = '100%';
 		learnMoreBtnOne.style.display = 'none';
-		benefitsListSedan.style.display = 'block';
+		setTimeout(() => {
+			benefitsListSedan.style.display = 'block';
+			benefitsListSedan.style.width = '410px';
+			close;
+		}, 1000);
 	}
 }
 
@@ -57,10 +61,14 @@ function expandCardTwo() {
 		closeBtnTwo.style.transitionAll = '2s';
 		closeBtnTwo.style.top = '580px';
 		closeBtnTwo.style.left = '980px';
-		closeBtnTwo.style.opacity = '100%';
 		closeBtnTwo.style.height = 'auto';
+		closeBtnTwo.style.opacity = '100%';
 		learnMoreBtnTwo.style.display = 'none';
-		benefitsListSuv.style.display = 'block';
+		setTimeout(() => {
+			benefitsListSuv.style.display = 'block';
+			benefitsListSuv.style.width = '410px';
+			close;
+		}, 1000);
 	}
 }
 
@@ -100,7 +108,11 @@ function expandCardThree() {
 		closeBtnThree.style.left = '980px';
 		closeBtnThree.style.opacity = '100%';
 		learnMoreBtnThree.style.display = 'none';
-		benefitsListLuxury.style.display = 'block';
+		setTimeout(() => {
+			benefitsListLuxury.style.display = 'block';
+			benefitsListLuxury.style.width = '410px';
+			close;
+		}, 1000);
 	}
 }
 
