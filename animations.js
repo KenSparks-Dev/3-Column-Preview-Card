@@ -1,3 +1,6 @@
+//All columns
+let cards = document.querySelector('.column');
+
 //column one btn functions
 let learnMoreBtnOne = document.querySelector('.open-btn-one');
 let sedansCard = document.querySelector('.column-one');
@@ -7,6 +10,13 @@ learnMoreBtnOne.addEventListener('click', expandCardOne);
 closeBtnOne.addEventListener('click', closeCardOne);
 
 function expandCardOne() {
+	if (window.innerWidth < 1024) {
+		benefitsListSedan.style.display = 'block';
+		learnMoreBtnOne.style.display = 'none';
+		closeBtnOne.style.display = 'block';
+		closeBtnOne.style.borderRadius = '50%';
+		closeBtnOne.style.transitionAll = '2s';
+	}
 	if (window.innerWidth >= 1024) {
 		sedansCard.style.transform = 'translateX(100px)';
 		sedansCard.style.width = '1000px';
@@ -30,15 +40,22 @@ function expandCardOne() {
 }
 
 function closeCardOne() {
-	sedansCard.style.transform = 'translateX(0px)';
-	sedansCard.style.width = '320px';
-	sedansCard.style.marginLeft = '0px';
-	sedansCard.style.zIndex = '1';
-	sedansCard.style.transition = '1s';
-	sedansCard.style.borderRadius = '15px 0px 0px 15px';
-	closeBtnOne.style.display = 'none';
-	learnMoreBtnOne.style.display = 'block';
-	benefitsListSedan.style.display = 'none';
+	if (window.innerWidth < 1024) {
+		closeBtnOne.style.display = 'none';
+		learnMoreBtnOne.style.display = 'block';
+		benefitsListSedan.style.display = 'none';
+	}
+	if (window.innerWidth >= 1024) {
+		sedansCard.style.transform = 'translateX(0px)';
+		sedansCard.style.width = '320px';
+		sedansCard.style.marginLeft = '0px';
+		sedansCard.style.zIndex = '1';
+		sedansCard.style.transition = '1s';
+		sedansCard.style.borderRadius = '15px 0px 0px 15px';
+		closeBtnOne.style.display = 'none';
+		learnMoreBtnOne.style.display = 'block';
+		benefitsListSedan.style.display = 'none';
+	}
 }
 
 //column Two btn functions
@@ -48,7 +65,15 @@ let closeBtnTwo = document.querySelector('.close-btn-two');
 let benefitsListSuv = document.querySelector('.benefits-list-suv');
 learnMoreBtnTwo.addEventListener('click', expandCardTwo);
 closeBtnTwo.addEventListener('click', closeCardTwo);
+
 function expandCardTwo() {
+	if (window.innerWidth < 1024) {
+		benefitsListSuv.style.display = 'block';
+		learnMoreBtnTwo.style.display = 'none';
+		closeBtnTwo.style.display = 'block';
+		closeBtnTwo.style.borderRadius = '50%';
+		closeBtnTwo.style.transitionAll = '2s';
+	}
 	if (window.innerWidth >= 1024) {
 		suvCard.style.transform = 'translateX(0px)';
 		suvCard.style.width = '1000px';
@@ -73,16 +98,23 @@ function expandCardTwo() {
 }
 
 function closeCardTwo() {
-	suvCard.style.transform = 'translateX(0px)';
-	suvCard.style.width = '320px';
-	suvCard.style.margin = '0px';
-	suvCard.style.zIndex = '1';
-	suvCard.style.transition = '1s';
-	suvCard.style.borderRadius = '0px 0px 0px 0px';
-	closeBtnTwo.style.display = 'none';
-	learnMoreBtnTwo.style.display = 'block';
-	benefitsListSuv.style.display = 'none';
-	closeBtnTwo.style.position = 'static';
+	if (window.innerWidth < 1024) {
+		closeBtnTwo.style.display = 'none';
+		learnMoreBtnTwo.style.display = 'block';
+		benefitsListSuv.style.display = 'none';
+	}
+	if (window.innerWidth >= 1024) {
+		suvCard.style.transform = 'translateX(0px)';
+		suvCard.style.width = '320px';
+		suvCard.style.margin = '0px';
+		suvCard.style.zIndex = '1';
+		suvCard.style.transition = '1s';
+		suvCard.style.borderRadius = '0px 0px 0px 0px';
+		closeBtnTwo.style.display = 'none';
+		learnMoreBtnTwo.style.display = 'block';
+		benefitsListSuv.style.display = 'none';
+		closeBtnTwo.style.position = 'static';
+	}
 }
 
 //column three btn functions
@@ -94,6 +126,13 @@ learnMoreBtnThree.addEventListener('click', expandCardThree);
 closeBtnThree.addEventListener('click', closeCardThree);
 
 function expandCardThree() {
+	if (window.innerWidth < 1024) {
+		benefitsListLuxury.style.display = 'block';
+		learnMoreBtnThree.style.display = 'none';
+		closeBtnThree.style.display = 'block';
+		closeBtnThree.style.borderRadius = '50%';
+		closeBtnThree.style.transitionAll = '2s';
+	}
 	if (window.innerWidth >= 1024) {
 		LuxuryCard.style.transform = 'translateX(100px)';
 		LuxuryCard.style.width = '1000px';
@@ -117,13 +156,20 @@ function expandCardThree() {
 }
 
 function closeCardThree() {
-	LuxuryCard.style.transform = 'translateX(0px)';
-	LuxuryCard.style.width = '320px';
-	LuxuryCard.style.marginLeft = '0px';
-	LuxuryCard.style.zIndex = '1';
-	LuxuryCard.style.transition = '1s';
-	LuxuryCard.style.borderRadius = '0px 15px 15px 0px';
-	closeBtnThree.style.display = 'none';
-	learnMoreBtnThree.style.display = 'block';
-	benefitsListLuxury.style.display = 'none';
+	if (window.innerWidth < 1024) {
+		closeBtnThree.style.display = 'none';
+		learnMoreBtnThree.style.display = 'block';
+		benefitsListLuxury.style.display = 'none';
+	}
+	if (window.innerWidth >= 1024) {
+		LuxuryCard.style.transform = 'translateX(0px)';
+		LuxuryCard.style.width = '320px';
+		LuxuryCard.style.marginLeft = '0px';
+		LuxuryCard.style.zIndex = '1';
+		LuxuryCard.style.transition = '1s';
+		LuxuryCard.style.borderRadius = '0px 15px 15px 0px';
+		closeBtnThree.style.display = 'none';
+		learnMoreBtnThree.style.display = 'block';
+		benefitsListLuxury.style.display = 'none';
+	}
 }

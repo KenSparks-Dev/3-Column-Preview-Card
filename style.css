@@ -140,6 +140,13 @@ button {
   }
 }
 
+@media (min-width: 768px) {
+  .benefits-list li {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
 @media (min-width: 1024px) {
 
   main {
@@ -203,9 +210,11 @@ button {
   .benefits-list {
     height: 80px;
   }
+
   .benefits-list li {
     margin-bottom: 10px;
   }
+
   .description-benefits-list {
     display: flex;
   }
