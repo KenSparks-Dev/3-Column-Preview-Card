@@ -6,10 +6,8 @@ let learnMoreBtnOne = document.querySelector('.open-btn-one');
 let sedansCard = document.querySelector('.column-one');
 let closeBtnOne = document.querySelector('.close-btn-one');
 let benefitsListSedan = document.querySelector('.benefits-list-sedan');
-learnMoreBtnOne.addEventListener('click', expandCardOne);
-closeBtnOne.addEventListener('click', closeCardOne);
-
-function expandCardOne() {
+// onclick events
+learnMoreBtnOne.onclick = function () {
 	if (window.innerWidth < 1024) {
 		benefitsListSedan.style.display = 'block';
 		learnMoreBtnOne.style.display = 'none';
@@ -37,9 +35,8 @@ function expandCardOne() {
 			close;
 		}, 1000);
 	}
-}
-
-function closeCardOne() {
+};
+closeBtnOne.onclick = function () {
 	if (window.innerWidth < 1024) {
 		closeBtnOne.style.display = 'none';
 		learnMoreBtnOne.style.display = 'block';
@@ -56,17 +53,15 @@ function closeCardOne() {
 		learnMoreBtnOne.style.display = 'block';
 		benefitsListSedan.style.display = 'none';
 	}
-}
+};
 
 //column Two btn functions
 let learnMoreBtnTwo = document.querySelector('.open-btn-two');
 let suvCard = document.querySelector('.column-two');
 let closeBtnTwo = document.querySelector('.close-btn-two');
 let benefitsListSuv = document.querySelector('.benefits-list-suv');
-learnMoreBtnTwo.addEventListener('click', expandCardTwo);
-closeBtnTwo.addEventListener('click', closeCardTwo);
-
-function expandCardTwo() {
+//On click Events
+learnMoreBtnTwo.onclick = function () {
 	if (window.innerWidth < 1024) {
 		benefitsListSuv.style.display = 'block';
 		learnMoreBtnTwo.style.display = 'none';
@@ -95,9 +90,8 @@ function expandCardTwo() {
 			close;
 		}, 1000);
 	}
-}
-
-function closeCardTwo() {
+};
+closeBtnTwo.onclick = function () {
 	if (window.innerWidth < 1024) {
 		closeBtnTwo.style.display = 'none';
 		learnMoreBtnTwo.style.display = 'block';
@@ -115,17 +109,15 @@ function closeCardTwo() {
 		benefitsListSuv.style.display = 'none';
 		closeBtnTwo.style.position = 'static';
 	}
-}
+};
 
 //column three btn functions
 let learnMoreBtnThree = document.querySelector('.open-btn-three');
 let LuxuryCard = document.querySelector('.column-three');
 let closeBtnThree = document.querySelector('.close-btn-three');
 let benefitsListLuxury = document.querySelector('.benefits-list-luxury');
-learnMoreBtnThree.addEventListener('click', expandCardThree);
-closeBtnThree.addEventListener('click', closeCardThree);
-
-function expandCardThree() {
+//onclick events
+learnMoreBtnThree.onclick = function () {
 	if (window.innerWidth < 1024) {
 		benefitsListLuxury.style.display = 'block';
 		learnMoreBtnThree.style.display = 'none';
@@ -153,9 +145,9 @@ function expandCardThree() {
 			close;
 		}, 1000);
 	}
-}
+};
 
-function closeCardThree() {
+closeBtnThree.onclick = function () {
 	if (window.innerWidth < 1024) {
 		closeBtnThree.style.display = 'none';
 		learnMoreBtnThree.style.display = 'block';
@@ -172,4 +164,4 @@ function closeCardThree() {
 		learnMoreBtnThree.style.display = 'block';
 		benefitsListLuxury.style.display = 'none';
 	}
-}
+};
